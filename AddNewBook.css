@@ -1,0 +1,10 @@
+	.form-control,.btn{
+		
+		border-color: #111;
+		border-radius: 4px;
+	}
+	
+	.btn {
+		
+		font-weight: bold;
+	}
