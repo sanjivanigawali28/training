@@ -1,0 +1,36 @@
+	<div class="container" ng-controller="indexController">
+			</br><center><h2>Library Management System(Screen 1)</h2></center></br>
+			
+			<form>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<div class="color"><a href="#AddNewBook">Add New Book</a></div>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<div class="color"><a href="#AddNewAuthor">Add New Author</a></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<input class="form-control glyphicon" ng-model="searchText" type="search" id="search" placeholder="&#57347; Search books by ISBN, Title and Author Name">
+						<table id="searchTextResults" style="width:100%">
+						<tr><th>ISBN</th><th>Book-Title</th><th>AuthorName</th><th>Price</th><th>Available On</th></tr>
+						<tr ng-repeat="list in myWelcome | filter:searchText">
+						<td><a href="#editBook?book={{list.isbn}}">{{list.isbn}}</td>
+						<td>{{list.title}}</td>
+						<td><a href="#editAuthor?author={{list.author}}">{{list.author}}</a></td>
+						<td>{{list.price}}</td>
+						<td>{{list.availableOn.join(', ')}}</td>
+						</tr>
+						</table>
+						
+					</div>	
+					<div class="col-md-3"></div>
+				</div>
+			</form>
+			
+		</div>

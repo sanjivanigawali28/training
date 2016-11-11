@@ -1,0 +1,66 @@
+		<div class="container" ng-controller="bookEditController">
+			</br><center><h2>Book Details(Screen 2)</h2></center></br>
+			<form class="form-horizontal">
+	  
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<img src="image/uploadPhoto.jpg" class="col-md-2"alt="Photo">
+					<div class="col-md-6 well" >
+						<span type="text">Book Title: {{bookDetails.title}}</span></br>
+						<span type="text">Author: {{bookDetails.author}}</span></br>
+						<span type="text">Price: {{bookDetails.price}}</span></br>
+						<span type="text">Available On: {{bookDetails.availableOn.join(', ')}}</span></br></br>
+						<button type="submit" class="btn" id="showData">Edit</button>
+					</div>
+				</div>
+				<div class="disp">
+				<div class="form-group ">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Book Title:</label>
+						<div class="col-md-6">
+							<input type="text" value="{{bookDetails.title}}" placeholder="Book Title" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Author:</label>
+						<div class="col-md-6">
+							<input type="text" value="{{bookDetails.author}}" placeholder="Author" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Price:</label>
+						<div class="col-md-6">
+							
+							<input type="text" value="{{bookDetails.price}}" placeholder="Price" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Available On:</label>
+						<div class="col-md-6">
+							
+							<input type="text" value="{{bookDetails.availableOn.join(', ')}}" placeholder="Available On" class="form-control">
+						</div>
+				</div>
+				<div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<button type="button" class="btn">Update</button>
+						<button type="button" class="btn">Delete</button>
+					</div>
+				</div>
+				</div>
+				<!-- <div class="form-group disp">
+					<div class="col-md-4"></div>
+					<div class="col-md-6">
+						<textarea class="form-control" rows="5" id="data"></textarea></br>
+						<button type="button" class="btn">Update</button>
+						<button type="button" class="btn">Delete</button>
+					</div>
+				</div> -->
+			</form>
+			
+		</div>
+		<div><h1>{{myUrl}}</h1></div>

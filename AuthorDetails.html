@@ -1,0 +1,85 @@
+		<div class="container" ng-controller="authorEditController">
+			</br><center><h2>Auther Details(Screen 3)</h2></center></br>
+			<form class="form-horizontal">
+	  
+				<div class="form-group">
+					<div class="col-md-2"></div>
+					<img src="image/uploadPhoto.jpg" class="col-md-2"alt="Photo">
+					<div class="col-md-6 disp well">
+						<span type="text">Author ID: {{authorDetails.empid}}</span></br>
+						<span type="text">Author Name: {{authorDetails.name}}</span></br>
+						<span type="text">Email: {{authorDetails.email}}</span></br>
+						<span type="text">Department: {{authorDetails.department}}</span></br>
+						<span type="text">Website: {{authorDetails.website}}</span></br>
+						<span type="text">Skills: {{authorDetails.skills.join(', ')}}</span></br></br>
+						<button type="submit" class="btn" id="showData">Edit</button>
+					</div>
+				</div>
+				<div class="disp">
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Author ID:</label>
+						<div class="col-md-6">
+							<input type="text" value="{{authorDetails.empid}}" placeholder="Author ID" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Author Name:</label>
+						<div class="col-md-6">
+							<input type="text" value="{{authorDetails.name}}" placeholder="Author Name" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Email:</label>
+						<div class="col-md-6">
+							<input type="text" value="{{authorDetails.email}}" placeholder="Email" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Department:</label>
+						<div class="col-md-2 dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Department
+						<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Engineering</a></li>
+								<li><a href="#">HR</a></li>
+								<li><a href="#">Management</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<input type="text" value="{{authorDetails.department}}" placeholder="Department" id="departmentValue" class="form-control">
+						</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2"></div>
+						<label class="control-label col-md-2">Skills:</label>
+						<div class="col-md-6">
+							
+							<input type="text" value="{{authorDetails.skills.join(', ')}}" placeholder="Skills" class="form-control">
+						</div>
+				</div>
+				<div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<button type="button" class="btn">Update</button>
+						<button type="button" class="btn">Delete</button>
+					</div>
+				</div>
+		</div>
+					
+				
+				<!-- <div class="form-group disp">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<textarea class="form-control" rows="5" id="data"></textarea></br>
+						<button type="button" class="btn">Update</button>
+						<button type="button" class="btn">Delete</button>
+					</div>
+				</div> -->
+				
+			</form>
+			<div><h1>{{myUrl}}</h1></div>
+	
